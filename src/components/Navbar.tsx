@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Search, Phone } from "lucide-react";
+<<<<<<< HEAD
 import QuoteForm from "./QuoteForm"; 
 
 const Navbar = () => {
@@ -18,6 +19,12 @@ const Navbar = () => {
   });
 
   const [submitted, setSubmitted] = useState(false);
+=======
+import { products } from '../data/products';
+
+const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+>>>>>>> a05c71d (Latest)
   const location = useLocation();
 
   const navigation = [
@@ -27,6 +34,7 @@ const Navbar = () => {
     { name: "Contact", href: "/contact" },
   ];
 
+<<<<<<< HEAD
   // Fetch product names from the database
   useEffect(() => {
     const fetchProducts = async () => {
@@ -90,6 +98,8 @@ const Navbar = () => {
 };
 
 
+=======
+>>>>>>> a05c71d (Latest)
   return (
     <nav className="bg-white shadow-lg fixed w-full z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -98,7 +108,11 @@ const Navbar = () => {
             <Link to="/" className="flex-shrink-0 flex items-center space-x-3">
               <img src="images/logo.webp" alt="Kanak Print-N-Pack Logo" className="h-10 w-10 object-contain" />
               <div>
+<<<<<<< HEAD
                 <span className="text-2xl font-bold text-blue-600">Kanak</span>
+=======
+                <span className="text-2xl font-bold text-blue-600">Kanak </span>
+>>>>>>> a05c71d (Latest)
                 <span className="text-2xl font-bold text-red-600">Print-N-Pack</span>
               </div>
             </Link>
@@ -121,22 +135,55 @@ const Navbar = () => {
               ))}
             </div>
             <div className="flex items-center space-x-4">
+<<<<<<< HEAD
               <button className="text-gray-700 hover:text-blue-600">
                 <Search size={20} />
               </button>
               <button
                 onClick={() => setIsModalOpen(true)}
+=======
+             {/* <button 
+			  className="text-gray-700 hover:text-blue-600"
+			  onClick={() => {
+				<div className="relative">
+            <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-5 w-5" />
+            <input
+              type="text"
+              placeholder="Search products..."
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              className="pl-10 pr-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 w-full md:w-80"
+            />
+          </div>
+				console.log("Button clicked, searching for:", searchQuery);
+			  }}
+			>
+			  <Search size={20} />
+			</button> */}
+
+              <a
+                href="https://forms.gle/17Aou6XnTNDZboke6" 
+                target="_blank" 
+                rel="noopener noreferrer"
+>>>>>>> a05c71d (Latest)
                 className="bg-red-600 text-white px-4 py-2 rounded-md flex items-center space-x-2 hover:bg-red-700 transition-colors"
               >
                 <Phone size={16} />
                 <span>Get Quote</span>
+<<<<<<< HEAD
               </button>
+=======
+              </a>
+>>>>>>> a05c71d (Latest)
             </div>
           </div>
         </div>
       </div>
+<<<<<<< HEAD
 
       <QuoteForm isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
+=======
+>>>>>>> a05c71d (Latest)
     </nav>
   );
 };

@@ -32,7 +32,11 @@ const About = () => {
 
       {/* Company Overview */}
       <section className="py-20 bg-white">
+<<<<<<< HEAD
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+=======
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-9">
+>>>>>>> a05c71d (Latest)
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <motion.div
               initial={{ opacity: 0, x: -20 }}
@@ -42,9 +46,20 @@ const About = () => {
               <p className="text-gray-600 mb-6">
                 Kanak Print-N-Pack has been at the forefront of innovative packaging solutions for over 27 years. Our commitment to quality, sustainability, and customer satisfaction has made us a trusted partner for businesses across industries.
               </p>
+<<<<<<< HEAD
               <p className="text-gray-600">
                 We combine traditional craftsmanship with modern technology to create packaging solutions that not only protect your products but also enhance their market presence.
               </p>
+=======
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">What We do</h2>
+              <p className="text-gray-600">
+                We combine traditional craftsmanship with modern technology to create packaging solutions that not only protect your products but also enhance their market presence.
+              </p>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">Our Range</h2>
+              <p className="text-gray-600">
+                We provide services across industries from textile or stationary companies to hospitals.
+              </p>
+>>>>>>> a05c71d (Latest)
             </motion.div>
             <motion.div
               initial={{ opacity: 0, x: 20 }}
@@ -120,6 +135,7 @@ const About = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
+<<<<<<< HEAD
                 name: "Rajesh Kumar",
                 position: "CEO",
                 image: "https://images.unsplash.com/photo-1556157382-97eda2d62296?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80"
@@ -133,6 +149,21 @@ const About = () => {
                 name: "Amit Patel",
                 position: "Technical Head",
                 image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80"
+=======
+                name: "Mahendra Mehta",
+                
+                image: "/profilepic.jpg"
+              },
+              {
+                name: "Vastupal Mehta",
+              
+                image: "/profilepic.jpg"
+              },
+              {
+                name: "Rishabh Mehta",
+                
+                image: "/profilepic.jpg"
+>>>>>>> a05c71d (Latest)
               }
             ].map((member, index) => (
               <motion.div

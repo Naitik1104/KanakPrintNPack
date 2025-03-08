@@ -3,13 +3,19 @@ import { motion } from 'framer-motion';
 import { Search } from 'lucide-react';
 import ProductCard from '../components/ProductCard';
 import { products } from '../data/products';
+<<<<<<< HEAD
 import QuoteForm from "../components/QuoteForm";
 
 const categories = ['All', 'Retail', 'E-commerce', 'Food', 'Gift', 'Industrial', 'Protection'];
+=======
+
+const categories = ['All', 'Paper', 'PVC', 'Box','Ribbon', 'Label', 'Sticker', 'Tags','Bags','Booklet'];
+>>>>>>> a05c71d (Latest)
 
 const Services = () => {
   const [selectedCategory, setSelectedCategory] = useState('All');
   const [searchQuery, setSearchQuery] = useState('');
+<<<<<<< HEAD
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [formData, setFormData] = useState({
@@ -18,6 +24,8 @@ const Services = () => {
     phone: '',
     message: '',
   });
+=======
+>>>>>>> a05c71d (Latest)
 
   const filteredProducts = products.filter(product => {
     const matchesCategory = selectedCategory === 'All' || product.category === selectedCategory;
@@ -26,6 +34,7 @@ const Services = () => {
     return matchesCategory && matchesSearch;
   });
 
+<<<<<<< HEAD
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
@@ -40,6 +49,8 @@ const Services = () => {
     }, 2000);
   };
 
+=======
+>>>>>>> a05c71d (Latest)
   return (
     <div className="min-h-screen bg-gray-50 py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -99,6 +110,7 @@ const Services = () => {
           <p className="mb-6">
             Contact our team for personalized packaging solutions tailored to your needs
           </p>
+<<<<<<< HEAD
           <button 
             onClick={() => setIsModalOpen(true)}
             className="bg-white text-blue-600 px-8 py-3 rounded-md font-medium hover:bg-gray-100 transition-colors">
@@ -108,6 +120,18 @@ const Services = () => {
       </div>
 
       <QuoteForm isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
+=======
+          <a 
+            href="https://forms.gle/17Aou6XnTNDZboke6" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="bg-white text-blue-600 px-8 py-3 rounded-md font-medium hover:bg-gray-100 transition-colors"
+          >
+            Request a Quote
+          </a>
+        </div>
+      </div>
+>>>>>>> a05c71d (Latest)
     </div>
   );
 };

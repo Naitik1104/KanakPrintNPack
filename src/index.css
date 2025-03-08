@@ -12,5 +12,9 @@
 }
 
 .animate-scroll {
+<<<<<<< HEAD
   animation: scroll 30s linear infinite;
+=======
+  animation: scroll 10s linear infinite;
+>>>>>>> a05c71d (Latest)
 }

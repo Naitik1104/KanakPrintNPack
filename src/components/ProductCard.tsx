@@ -27,6 +27,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
         <p className="text-gray-600 mb-4">{product.description}</p>
         <div className="flex items-center justify-between">
           <span className="text-lg font-bold text-blue-600">{product.price}</span>
+<<<<<<< HEAD
           <Link
             to={`/services/${product.id}`}
             className="inline-flex items-center text-red-600 hover:text-red-700 font-medium"
@@ -34,6 +35,10 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
             Learn More
             <ArrowRight className="ml-2 h-4 w-4" />
           </Link>
+=======
+          
+		  
+>>>>>>> a05c71d (Latest)
         </div>
       </div>
     </motion.div>

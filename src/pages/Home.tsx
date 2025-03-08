@@ -15,7 +15,11 @@ const Home = () => {
     },
     {
       icon: <Recycle className="w-6 h-6" />,
+<<<<<<< HEAD
       title: 'Eco-Friendly',
+=======
+      title: 'Sustainability',
+>>>>>>> a05c71d (Latest)
       description: 'Sustainable materials and processes'
     },
     {
@@ -47,9 +51,15 @@ const Home = () => {
       {/* Floating Icons */}
       <div className="fixed right-1 top-1/2 transform -translate-y-1/2 space-y-3 z-50">
         {[
+<<<<<<< HEAD
           { icon: <MessageCircle />, label: 'WhatsApp', link: 'https://wa.me/9322299267' },
           { icon: <ShoppingCart />, label: 'Amazon', link: 'https://www.amazon.com/' },
           { icon: <Mail />, label: 'Email', link: 'mailto:info@example.com' }
+=======
+          { icon: <MessageCircle />, label: 'WhatsApp', link: 'https://wa.me/9322099267' },
+          /*{ icon: <ShoppingCart />, label: 'Amazon', link: 'https://www.amazon.com/' },*/
+          { icon: <Mail />, label: 'Email', link: 'kanakprints2024@gmail.com' }
+>>>>>>> a05c71d (Latest)
         ].map((item, index) => (
           <motion.a
             key={index}
@@ -101,6 +111,16 @@ const Home = () => {
                 Our Services
                 <ArrowRight className="ml-2" />
               </Link>
+<<<<<<< HEAD
+=======
+              <Link
+                to="/about"
+                className="bg-blue-600 text-white px-8 py-3 rounded-md hover:bg-blue-700 transition-colors inline-flex items-center"
+              >
+                About Us
+                <ArrowRight className="ml-2" />
+              </Link>
+>>>>>>> a05c71d (Latest)
             </div>
           </motion.div>
         </div>
@@ -174,6 +194,7 @@ const Home = () => {
         </div>
       </section>
 
+<<<<<<< HEAD
       {/* Testimonials Section */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -213,6 +234,8 @@ const Home = () => {
           </div>
         </div>
       </section>
+=======
+>>>>>>> a05c71d (Latest)
     </div>
   );
 };
